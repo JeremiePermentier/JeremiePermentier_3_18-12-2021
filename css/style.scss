@@ -21,7 +21,7 @@ sass/
 |   |– _footer.scss       // Footer
 |
 |
-`– main.scss              // Main Sass file
+`– style.scss              // Main Sass file
 */
 @import 'partials/abstracts/mixins',
         'partials/abstracts/variables';    
@@ -29,4 +29,6 @@ sass/
 @import 'partials/base/reset',
         'partials/base/font'        
 ;
-@import 'partials/layout/header'
+@import 'partials/layout/header';
+
+@import 'partials/pages/operation';

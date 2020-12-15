@@ -1,0 +1,27 @@
+.operation{
+    padding: 3rem 1rem;
+    &__heading{
+        @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);
+    }
+    &__steps{
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bold;
+        background-color: $colorBackground;
+        border-radius: 1rem;
+        margin: 1rem 1rem;
+        padding: 1rem 1.5rem;
+        &::before{
+            content: "1";
+            padding: 0.25rem;
+            width: 1rem;
+            color: #FFF;
+            background-color: #9356DC;
+            text-align: center;
+            border-radius: 2rem;
+        }
+        &--text , &--icon{
+            color: $colorTextClear;
+        }
+    }
+}
