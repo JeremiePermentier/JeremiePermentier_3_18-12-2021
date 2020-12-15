@@ -1,0 +1,6 @@
+@mixin heading ($font: 'Shrikhand', $color: $colorTextDark, $size: 2.25rem, $font-weight: none){
+    font-family: $font, sans-serif;
+    color: $color;
+    font-size: $size;
+    font-weight: $font-weight;
+}

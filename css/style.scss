@@ -23,3 +23,10 @@ sass/
 |
 `– main.scss              // Main Sass file
 */
+@import 'partials/abstracts/mixins',
+        'partials/abstracts/variables';    
+;
+@import 'partials/base/reset',
+        'partials/base/font'        
+;
+@import 'partials/layout/header'

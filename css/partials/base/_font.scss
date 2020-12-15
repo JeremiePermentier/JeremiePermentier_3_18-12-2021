@@ -1,0 +1,10 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.25rem;
+}
+[class*="heading"]{
+    line-height: 1.5rem
+}
+h1{
+    @include heading();
+}
