@@ -1,0 +1,27 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Intégration des maquettes pour OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremiePermentier/ohmyfood.git"
+  },
+  "author": "Jérémie Permentier",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/JeremiePermentier/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/JeremiePermentier/ohmyfood#readme",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.30.0"
+  }
+}
