@@ -123,6 +123,7 @@ h1 {
   padding: 1rem;
 }
 
+/*--Operation--*/
 .operation {
   padding: 3rem 1rem;
 }
@@ -162,6 +163,91 @@ h1 {
 }
 .operation .steps-three::before {
   content: "3";
+}
+
+/*--Restaurants--*/
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 3rem 1.5rem;
+}
+.restaurants__heading {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0 1rem 0;
+}
+.restaurants__card {
+  padding: 0.5rem 0;
+}
+.restaurants__card--link {
+  text-decoration: none;
+}
+.restaurants__card--container {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.restaurants__card--img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  object-position: 0px -52px;
+}
+.restaurants__card--figcaption {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #555454;
+}
+.restaurants__card--like {
+  display: grid;
+}
+.restaurants__card--brand, .restaurants__card--solid {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+.restaurants__card--bold {
+  font-weight: bold;
+  color: #000;
+}
+.restaurants__card--solid {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.restaurants__card--solid::before {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants__card--brand:hover {
+  opacity: 0;
+}
+.restaurants__card--solid:hover {
+  opacity: 1;
+}
+
+.new::before {
+  content: "Nouveau";
+  background-color: #99e2d0;
+  color: #058a69;
+  font-weight: bold;
+  font-size: 0.75rem;
+  position: absolute;
+  padding: 0.25rem 0.75rem;
+  margin: 1rem 0 0 0;
+  right: 2.25rem;
+  border-radius: 0.2rem;
+}
+
+.two {
+  object-position: 0px -146px;
 }
 
 /*# sourceMappingURL=style.css.map */
