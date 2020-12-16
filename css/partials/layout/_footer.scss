@@ -1,0 +1,15 @@
+.footer{
+    padding: 2rem 1.5rem;
+    background-color: $colorBackgroundDark;
+    &__heading{
+        @include heading($color: #FFF, $size: 1rem);
+        padding: 0 0 1rem 0;
+    }
+    &__list{
+        &--link{
+            text-decoration: none;
+            color: #fff;
+            line-height: 1.75rem;
+        }
+    }
+}

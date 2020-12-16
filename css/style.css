@@ -89,13 +89,14 @@ h1 {
 .header__position {
   background-color: #eaeaea;
   display: flex;
-  justify-content: space-around;
-  padding: 1rem 7rem;
+  justify-content: center;
+  padding: 1rem;
   color: #353535;
   box-shadow: inset 0px 7px 4px -3px #1D1C1C30;
 }
 .header__position--text {
   font-weight: bold;
+  padding-left: 1rem;
 }
 .header__description {
   text-align: center;
@@ -121,6 +122,23 @@ h1 {
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem;
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  background-color: #353535;
+}
+.footer__heading {
+  font-family: "Shrikhand", sans-serif;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: none;
+  padding: 0 0 1rem 0;
+}
+.footer__list--link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.75rem;
 }
 
 /*--Operation--*/
@@ -178,7 +196,9 @@ h1 {
   padding: 0 0 1rem 0;
 }
 .restaurants__card {
-  padding: 0.5rem 0;
+  margin: 1.25rem 0;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 10px #1D1C1C30;
 }
 .restaurants__card--link {
   text-decoration: none;

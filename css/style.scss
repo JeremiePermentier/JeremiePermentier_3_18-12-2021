@@ -29,6 +29,8 @@ sass/
 @import 'partials/base/reset',
         'partials/base/font'        
 ;
-@import 'partials/layout/header';
+@import 'partials/layout/header',
+        'partials/layout/footer'
+;
 
 @import 'partials/pages/home';

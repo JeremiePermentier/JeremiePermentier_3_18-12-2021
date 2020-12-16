@@ -7,12 +7,13 @@
     &__position{
         background-color: #eaeaea;
         display: flex;
-        justify-content: space-around;
-        padding: 1rem 7rem;
+        justify-content: center;
+        padding: 1rem;
         color: $colorTextPosition;
         box-shadow: inset 0px 7px 4px -3px $colorShadow;
         &--text{
             font-weight: bold;
+            padding-left: 1rem;
         }
     }
     &__description{
