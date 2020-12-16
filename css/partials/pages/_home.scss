@@ -1,9 +1,49 @@
+.hero{
+    &__position{
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        color: $colorTextPosition;
+        box-shadow: inset 0px 7px 4px -3px $colorShadow;
+        &--text{
+            font-weight: bold;
+            padding-left: 1rem;
+        }
+    }
+    &__description{
+        text-align: center;
+        background-color: $colorBackground;
+        padding: 2rem 0 3rem 0;
+        &--heading{
+            @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);
+            padding: 0.5rem 3rem;
+        }
+        &--text{
+            padding: 0.5rem 0.5rem 2rem 0.5rem;
+            color: $colorTextClear;
+        }
+        &--btn{
+            border: none;
+            border-radius: 2rem;
+            background: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 1rem;
+        }
+    }
+}
+
 /*--Operation--*/
 
 .operation{
     padding: 3rem 1rem;
+    background-color: #FFF;
     &__heading{
         @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);
+        background-color: #FFF;
+        padding: 1rem 2rem;
     }
     &__steps{
         display: flex;
@@ -42,13 +82,12 @@
 
 .restaurants{
     background-color: $colorBackground;
-    padding: 3rem 1.5rem;
     &__heading{
         @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);
-        padding: 0 0 1rem 0;
+        padding: 1rem 2rem;
     }
     &__card{
-        margin: 1.25rem 0;
+        margin: 1.25rem 1rem;
         border-radius: 1rem;
         box-shadow: 6px 6px 10px $colorShadow;
         &--link{
@@ -63,7 +102,7 @@
             height: 25vh;
             border-radius: 1rem 1rem 0 0;
             object-fit: cover;
-            object-position: 0px -52px;
+            /*object-position: 0px -52px;*/
         }
         &--figcaption{
             padding: 1rem;
@@ -118,6 +157,6 @@
     right: 2.25rem;
     border-radius: 0.20rem;
 }
-.two{
+/*.two{
     object-position: 0px -146px;
-}
+}*/

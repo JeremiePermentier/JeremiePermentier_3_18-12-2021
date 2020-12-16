@@ -1,0 +1,13 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+header{
+    grid-column: 1/5;
+}
+main{
+    grid-column: 1/5;
+}
+footer{
+    grid-column: 1/5;
+}
