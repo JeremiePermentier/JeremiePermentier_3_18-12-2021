@@ -12,16 +12,26 @@
         margin: 1rem 1rem;
         padding: 1rem 1.5rem;
         &::before{
-            content: "1";
             padding: 0.25rem;
             width: 1rem;
             color: #FFF;
             background-color: #9356DC;
             text-align: center;
             border-radius: 2rem;
+            position: absolute;
+            left: 1.5rem;
         }
         &--text , &--icon{
             color: $colorTextClear;
         }
     }
+.steps-one::before{
+    content: '1';
+}
+.steps-two::before{
+    content: '2';
+}
+.steps-three::before{
+    content: '3';
+}
 }

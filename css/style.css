@@ -142,16 +142,26 @@ h1 {
   padding: 1rem 1.5rem;
 }
 .operation__steps::before {
-  content: "1";
   padding: 0.25rem;
   width: 1rem;
   color: #FFF;
   background-color: #9356DC;
   text-align: center;
   border-radius: 2rem;
+  position: absolute;
+  left: 1.5rem;
 }
 .operation__steps--text, .operation__steps--icon {
   color: #555454;
+}
+.operation .steps-one::before {
+  content: "1";
+}
+.operation .steps-two::before {
+  content: "2";
+}
+.operation .steps-three::before {
+  content: "3";
 }
 
 /*# sourceMappingURL=style.css.map */
