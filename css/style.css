@@ -78,7 +78,7 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   color: #000;
   font-size: 2.25rem;
-  font-weight: none;
+  font-weight: normal;
 }
 
 .header__heading {
@@ -95,7 +95,7 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   color: #FFF;
   font-size: 1rem;
-  font-weight: none;
+  font-weight: normal;
   padding: 0 0 1rem 0;
 }
 .footer__list--link {
@@ -233,6 +233,57 @@ h1 {
 @media screen and (max-width: 700px) {
   .restaurants {
     display: block;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3rem repeat(4, 5rem);
+    column-gap: 1rem;
+  }
+  .menu__container {
+    grid-column: 2/3;
+  }
+
+  .entrance:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+
+  .entrance:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+
+  .entrance:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 2/5;
+  }
+}
+@media screen and (max-width: 1449px) and (min-width: 1110px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3rem repeat(4, 5rem);
+  }
+  .menu__container {
+    grid-column: 2/3;
+  }
+
+  .entrance:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+
+  .entrance:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+
+  .entrance:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 2/5;
   }
 }
 .hero__position {
@@ -423,5 +474,113 @@ h1 {
 /*.two{
     object-position: 0px -146px;
 }*/
+.hero__img {
+  width: 100%;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.header__menu--icon {
+  color: #000;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  position: relative;
+  top: -3rem;
+  padding: 3rem 0 0 0;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+.menu__container {
+  display: flex;
+  justify-content: space-around;
+}
+.menu__heading {
+  font-family: "Shrikhand", sans-serif;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 1rem;
+}
+
+.entrance__heading {
+  padding: 1rem 0 0 1.5rem;
+}
+.entrance__heading::after {
+  content: "";
+  display: block;
+  width: 2.75rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+}
+.entrance__link {
+  text-decoration: none;
+  color: #000;
+}
+.entrance__card {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0;
+  display: flex;
+  box-shadow: 6px 6px 10px #1D1C1C30;
+}
+.entrance__card:active > .entrance__card--check {
+  width: 7rem;
+  transition: width 1s ease;
+}
+.entrance__card:active > .entrance__card--check > .entrance__card--icon {
+  transition: transform 400ms ease;
+  transform: rotate(360deg);
+}
+.entrance__card--check {
+  background-color: #99E2D0;
+  display: flex;
+  width: 0;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 0 1rem 1rem 0;
+  color: #fff;
+}
+.entrance__card--icon {
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0);
+}
+.entrance__grid {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.entrance__grid--text {
+  font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.entrance__grid--subtext {
+  grid-column: 1/2;
+  grid-row: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.95rem;
+}
+.entrance__grid--price {
+  grid-column: 2/3;
+  grid-row: 2;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 /*# sourceMappingURL=style.css.map */
