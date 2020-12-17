@@ -292,8 +292,8 @@ h1 {
   font-weight: bold;
   background-color: #f6f6f6;
   border-radius: 1rem;
-  margin: 1rem 1rem;
-  padding: 1rem 1.5rem;
+  margin: 1rem;
+  padding: 1.5rem;
 }
 .operation__steps::before {
   padding: 0.25rem;
@@ -394,12 +394,32 @@ h1 {
   font-weight: bold;
   font-size: 0.75rem;
   position: absolute;
-  padding: 0.25rem 0.75rem;
-  margin: 1rem 0 0 0;
-  right: 2.25rem;
+  padding: 2px 0.75rem;
+  margin: 1rem 0 0 20vw;
   border-radius: 0.2rem;
 }
 
+/*
+@media screen and (max-width: 400px){
+    .new::before{
+        margin: 1rem 0 0 16rem;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 550px){
+    .new::before{
+        margin: 1rem 0 0 22rem;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 700px){
+    .new::before{
+        margin: 1rem 0 0 27rem;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 900px){
+    .new::before{
+        margin: 1rem 0 0 30vw;
+    }
+}
 /*.two{
     object-position: 0px -146px;
 }*/

@@ -24,13 +24,7 @@
             color: $colorTextClear;
         }
         &--btn{
-            border: none;
-            border-radius: 2rem;
-            background: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
-            color: #fff;
-            font-size: 1rem;
-            font-weight: bold;
-            padding: 1rem;
+            @include btn;
         }
     }
 }
@@ -49,10 +43,7 @@
         display: flex;
         justify-content: space-evenly;
         font-weight: bold;
-        background-color: $colorBackground;
-        border-radius: 1rem;
-        margin: 1rem 1rem;
-        padding: 1rem 1.5rem;
+        @include mini-cards;
         &::before{
             padding: 0.25rem;
             width: 1rem;
@@ -146,16 +137,35 @@
 
 }
 .new::before{
-    content: "Nouveau";
+    content: 'Nouveau';
     background-color: #99e2d0;
     color: #058a69;
     font-weight: bold;
     font-size: 0.75rem;
     position: absolute;
-    padding: 0.25rem 0.75rem;
-    margin: 1rem 0 0 0;
-    right: 2.25rem;
-    border-radius: 0.20rem;
+    padding: 2px 0.75rem;
+    margin: 1rem 0 0 20vw;
+    border-radius: 0.2rem;
+}/*
+@media screen and (max-width: 400px){
+    .new::before{
+        margin: 1rem 0 0 16rem;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 550px){
+    .new::before{
+        margin: 1rem 0 0 22rem;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 700px){
+    .new::before{
+        margin: 1rem 0 0 27rem;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 900px){
+    .new::before{
+        margin: 1rem 0 0 30vw;
+    }
 }
 /*.two{
     object-position: 0px -146px;
