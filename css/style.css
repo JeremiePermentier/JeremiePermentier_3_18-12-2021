@@ -398,7 +398,6 @@ h1 {
   height: 25vh;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
-  /*object-position: 0px -52px;*/
 }
 .restaurants__card--figcaption {
   padding: 1rem;
@@ -456,7 +455,8 @@ h1 {
   display: flex;
   margin: auto;
   width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  height: 100%;
+  width: -moz-available;
   position: fixed;
   z-index: 1;
   animation: translates 1s ease-in 3s both;
@@ -472,7 +472,7 @@ h1 {
   animation: spinner 1s ease-in infinite;
 }
 
-header, main, footer {
+.animation {
   animation: content 1s ease-in 3s both;
 }
 
@@ -494,7 +494,7 @@ header, main, footer {
 }
 @keyframes content {
   0% {
-    transform: translateX(-900px);
+    transform: translateX(-3840px);
   }
   100% {
     transform: translateX(0);
