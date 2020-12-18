@@ -476,17 +476,31 @@ h1 {
 }*/
 .hero__img {
   width: 100%;
+  object-fit: cover;
 }
 
 .header__menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 1rem;
 }
 .header__menu--icon {
   color: #000;
 }
+.header__menu--heading {
+  margin: auto;
+}
 
+@media screen and (min-width: 700px) {
+  .hero__img {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .header__menu--heading {
+    margin: 0 15rem;
+  }
+}
 .menu {
   background-color: #f6f6f6;
   position: relative;

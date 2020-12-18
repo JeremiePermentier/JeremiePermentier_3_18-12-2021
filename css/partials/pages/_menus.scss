@@ -1,14 +1,27 @@
 .hero{
     &__img{
         width: 100%;
+        object-fit: cover;
     }
 }
 .header__menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 1rem;
     &--icon{
         color: $colorTextDark;
+    }
+    &--heading{
+        margin: auto;
+    }
+}
+@media screen and (min-width: 700px){
+    .hero__img{
+        height: 50vh;
+        object-fit: cover;
+    }
+    .header__menu--heading{
+        margin: 0 15rem;
     }
 }
 .menu{
