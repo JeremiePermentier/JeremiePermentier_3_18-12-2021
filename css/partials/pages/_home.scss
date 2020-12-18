@@ -147,27 +147,54 @@
     padding: 2px 0.75rem;
     margin: 1rem 0 0 20vw;
     border-radius: 0.2rem;
-}/*
-@media screen and (max-width: 400px){
-    .new::before{
-        margin: 1rem 0 0 16rem;
+}
+
+
+.loading{
+    background-color: #a3daeb;
+    display: flex;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: fixed;
+    z-index: 1;
+    animation: translates 1s ease-in 3s both;
+}
+
+.spinner{
+    border: 0.5rem solid rgba(128, 0, 128, 0.253);
+    border-top: 0.5rem solid purple;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    border-radius: 50%;
+    animation: spinner 1s ease-in infinite;
+}
+header, main, footer{
+    animation: content 1s ease-in 3s both;
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
-@media screen and (min-width: 401px) and (max-width: 550px){
-    .new::before{
-        margin: 1rem 0 0 22rem;
+@keyframes translates{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-900px);
     }
 }
-@media screen and (min-width: 551px) and (max-width: 700px){
-    .new::before{
-        margin: 1rem 0 0 27rem;
+@keyframes content{
+    0%{
+        transform: translateX(-900px);
+    }
+    100%{
+        transform: translateX(0);
     }
 }
-@media screen and (min-width: 701px) and (max-width: 900px){
-    .new::before{
-        margin: 1rem 0 0 30vw;
-    }
-}
-/*.two{
-    object-position: 0px -146px;
-}*/
