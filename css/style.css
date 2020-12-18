@@ -452,7 +452,7 @@ h1 {
 }
 
 .loading {
-  background-color: #a3daeb;
+  background-color: #f6f6f6;
   display: flex;
   margin: auto;
   width: -webkit-fill-available;
@@ -489,7 +489,7 @@ header, main, footer {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-900px);
+    transform: translateX(-3840px);
   }
 }
 @keyframes content {
