@@ -72,6 +72,7 @@
 /*--Restaurants--*/
 
 .restaurants{
+    padding: 0 0 1rem 0;
     background-color: $colorBackground;
     &__heading{
         @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);

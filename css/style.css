@@ -371,6 +371,7 @@ h1 {
 
 /*--Restaurants--*/
 .restaurants {
+  padding: 0 0 1rem 0;
   background-color: #f6f6f6;
 }
 .restaurants__heading {
@@ -595,6 +596,32 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.entrance__card:nth-child(2) {
+  opacity: 1;
+  animation: card 1s ease both;
+}
+
+.entrance__card:nth-child(3) {
+  opacity: 1;
+  animation: card 1s 500ms ease both;
+}
+
+.entrance__card:nth-child(4) {
+  opacity: 1;
+  animation: card 1s 1s ease both;
+}
+
+@keyframes card {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
