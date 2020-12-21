@@ -1,6 +1,7 @@
 .hero{
     &__img{
         width: 100%;
+        height: 45vh;
         object-fit: cover;
     }
 }
@@ -10,6 +11,7 @@
     padding: 1rem;
     &--icon{
         color: $colorTextDark;
+        vertical-align: bottom;
     }
     &--heading{
         margin: auto;
@@ -42,11 +44,12 @@
 .entrance{
     &__heading{
         padding: 1rem 0 0 1.5rem;
+        text-transform: uppercase;
     }
     &__heading::after{
         content: '';
         display: block;
-        width: 2.75rem;
+        width: 2.5rem;
         height: 0.25rem;
         background-color: $colorTertiary;
     }
@@ -115,17 +118,15 @@
     }
 }
 
-.entrance__card:nth-child(2){
+.entrance__card{
     opacity: 1;
-    animation: card 1s ease both;
-}
-.entrance__card:nth-child(3){
-    opacity: 1;
-    animation: card 1s 500ms ease both;
-}
-.entrance__card:nth-child(4){
-    opacity: 1;
-    animation: card 1s 1s ease both;
+    animation: card 500ms ease-in both;
+    animation-delay: 0;
+    @for $i from 2 through 4{
+        &:nth-child(#{$i}){
+            animation-delay: $i * 300ms;
+        }
+    }
 }
 @keyframes card{
     0%{
