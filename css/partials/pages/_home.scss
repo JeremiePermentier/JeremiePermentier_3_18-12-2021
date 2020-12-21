@@ -55,8 +55,8 @@
             background-color: #9356DC;
             text-align: center;
             border-radius: 2rem;
-            position: absolute;
-            margin: 0 20rem 0 0;
+            position: relative;
+            right: 2.5rem;
         }
         &--text , &--icon{
             color: $colorTextClear;
@@ -72,7 +72,7 @@
     content: '3';
 }
 }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 500px){
     .operation{
         width: 23rem;
     }
