@@ -593,7 +593,6 @@ h1 {
 .entrance__card {
   opacity: 1;
   animation: card 500ms ease-in both;
-  animation-delay: 0;
 }
 .entrance__card:nth-child(2) {
   animation-delay: 600ms;

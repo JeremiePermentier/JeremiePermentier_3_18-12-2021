@@ -121,7 +121,6 @@
 .entrance__card{
     opacity: 1;
     animation: card 500ms ease-in both;
-    animation-delay: 0;
     @for $i from 2 through 4{
         &:nth-child(#{$i}){
             animation-delay: $i * 300ms;
