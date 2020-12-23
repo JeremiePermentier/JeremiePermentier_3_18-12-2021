@@ -172,7 +172,7 @@ h1 {
   .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3rem repeat(4, 5rem);
+    grid-template-rows: 3rem repeat(4, 5rem) 3rem;
     column-gap: 1rem;
   }
   .menu__container {
@@ -193,12 +193,17 @@ h1 {
     grid-column: 3/4;
     grid-row: 2/5;
   }
+
+  .entrance__btn {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
 }
 @media screen and (max-width: 1449px) and (min-width: 1110px) {
   .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3rem repeat(4, 5rem);
+    grid-template-rows: 3rem repeat(4, 5rem) 3rem;
   }
   .menu__container {
     grid-column: 2/3;
@@ -217,6 +222,11 @@ h1 {
   .entrance:nth-child(4) {
     grid-column: 3/4;
     grid-row: 2/5;
+  }
+
+  .entrance__btn {
+    grid-column: 2/3;
+    grid-row: 6/7;
   }
 }
 .hero__position {
@@ -500,8 +510,9 @@ h1 {
   background-color: #f6f6f6;
   position: relative;
   top: -3rem;
-  padding: 3rem 0 0 0;
+  padding: 3rem 0;
   border-radius: 2rem 2rem 0rem 0rem;
+  margin: 0 0 -3rem 0;
 }
 .menu__container {
   display: flex;
@@ -591,6 +602,18 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.entrance__btn {
+  border: none;
+  border-radius: 2rem;
+  background: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 10rem;
+  margin: 3rem auto 0 auto;
+  display: block;
 }
 
 .entrance__card {

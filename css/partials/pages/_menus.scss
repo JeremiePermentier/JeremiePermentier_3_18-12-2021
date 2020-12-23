@@ -30,8 +30,9 @@
     background-color: $colorBackground;
     position: relative;
     top: -3rem;
-    padding: 3rem 0 0 0;
+    padding: 3rem 0;
     border-radius: 2rem 2rem 0rem 0rem;
+    margin: 0 0 -3rem 0;
     &__container{
         display: flex;
         justify-content: space-around;
@@ -115,6 +116,12 @@
             white-space: nowrap; 
             text-overflow: ellipsis;
         }
+    }
+    &__btn{
+        @include btn;
+        width: 10rem;
+        margin: 3rem auto 0 auto;
+        display: block;
     }
 }
 
