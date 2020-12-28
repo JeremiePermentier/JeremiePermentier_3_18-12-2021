@@ -612,7 +612,8 @@ h1 {
   font-weight: bold;
   padding: 1rem;
   width: 10rem;
-  margin: 3rem auto 0 auto;
+  height: max-content;
+  margin: 2rem auto 0 auto;
   display: block;
 }
 
