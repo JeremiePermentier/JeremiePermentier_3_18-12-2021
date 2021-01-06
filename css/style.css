@@ -260,11 +260,16 @@ h1 {
 .hero__description--btn {
   border: none;
   border-radius: 2rem;
-  background: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
+  background-image: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem;
+  transition: all 500ms ease;
+}
+.hero__description--btn:hover {
+  box-shadow: 6px 6px 10px #1D1C1C30;
+  background-image: linear-gradient(-5deg, #a37ecf 4%, #f769cf 100%);
 }
 
 /*--Operation--*/
@@ -372,22 +377,15 @@ h1 {
   color: #000;
 }
 .restaurants__card--solid {
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: opacity 400ms ease;
-}
-.restaurants__card--solid::before {
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .restaurants__card--brand:hover {
   opacity: 0;
 }
 .restaurants__card--solid:hover {
   opacity: 1;
+  color: #9356dc;
 }
 
 .new::before {
@@ -431,9 +429,8 @@ h1 {
   background-color: #f6f6f6;
   display: flex;
   margin: auto;
-  width: -webkit-fill-available;
+  width: 100%;
   height: 100%;
-  width: -moz-available;
   position: fixed;
   z-index: 1;
   animation: translates 1s ease-in 3s both;
@@ -548,12 +545,13 @@ h1 {
   padding: 0;
   display: flex;
   box-shadow: 6px 6px 10px #1D1C1C30;
+  cursor: pointer;
 }
-.entrance__card:active > .entrance__card--check {
+.entrance__card:hover > .entrance__card--check {
   width: 7rem;
   transition: width 1s ease;
 }
-.entrance__card:active > .entrance__card--check > .entrance__card--icon {
+.entrance__card:hover > .entrance__card--check > .entrance__card--icon {
   transition: transform 400ms ease;
   transform: rotate(360deg);
 }
@@ -606,7 +604,7 @@ h1 {
 .entrance__btn {
   border: none;
   border-radius: 2rem;
-  background: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
+  background-image: linear-gradient(-5deg, #9356dc 4%, #ff79da 100%);
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
@@ -615,20 +613,31 @@ h1 {
   height: max-content;
   margin: 2rem auto 0 auto;
   display: block;
+  transition: all 500ms ease;
+}
+.entrance__btn:hover {
+  box-shadow: 6px 6px 10px #1D1C1C30;
+  background-image: linear-gradient(-5deg, #a37ecf 4%, #f769cf 100%);
 }
 
 .entrance__card {
   opacity: 1;
   animation: card 500ms ease-in both;
 }
+.entrance__card:nth-child(1) {
+  animation-delay: 400ms;
+}
 .entrance__card:nth-child(2) {
-  animation-delay: 600ms;
+  animation-delay: 800ms;
 }
 .entrance__card:nth-child(3) {
-  animation-delay: 900ms;
+  animation-delay: 1200ms;
 }
 .entrance__card:nth-child(4) {
-  animation-delay: 1200ms;
+  animation-delay: 1600ms;
+}
+.entrance__card:nth-child(5) {
+  animation-delay: 2000ms;
 }
 
 @keyframes card {

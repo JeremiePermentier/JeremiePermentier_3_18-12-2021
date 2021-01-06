@@ -10,11 +10,11 @@
     $color: #fff,
     $font-size: 1rem,
     $font-weight: bold,
-    $padding: 1rem
+    $padding: 1rem,
     ){
     border: $border;
     border-radius: $border-radius;
-    background: $background;
+    background-image: $background;
     color: $color;
     font-size: $font-size;
     font-weight: $font-weight;

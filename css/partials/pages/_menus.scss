@@ -62,11 +62,12 @@
         @include mini-cards ($background-color: #fff, $padding: 0, $margin: 0.5rem);
         display: flex;
         box-shadow: 6px 6px 10px $colorShadow;
-        &:active > &--check{
+        cursor: pointer;
+        &:hover > &--check{
             width: 7rem;
             transition: width 1s ease;
         }
-        &:active > &--check > &--icon{
+        &:hover > &--check > &--icon{
             transition: transform 400ms ease;
             transform: rotate(360deg);
         }
@@ -123,15 +124,20 @@
         height: max-content;
         margin: 2rem auto 0 auto;
         display: block;
+        transition: all 500ms ease;
+        &:hover{
+            box-shadow: 6px 6px 10px $colorShadow;
+            background-image: linear-gradient(-5deg, #a37ecf 4%, #f769cf 100%);
+        }
     }
 }
 
 .entrance__card{
     opacity: 1;
     animation: card 500ms ease-in both;
-    @for $i from 2 through 4{
+    @for $i from 1 through 5{
         &:nth-child(#{$i}){
-            animation-delay: $i * 300ms;
+            animation-delay: $i * 400ms;
         }
     }
 }
