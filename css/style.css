@@ -295,6 +295,9 @@ h1 {
   margin: 1rem;
   padding: 1.5rem 0;
 }
+.operation__steps:hover > .operation__steps--icon {
+  color: #9356DC;
+}
 .operation__steps:hover {
   background-color: #f5edff;
 }
