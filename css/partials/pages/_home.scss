@@ -135,18 +135,17 @@
         &--solid{
             opacity: 0;
             transition: opacity 400ms ease;
-            // &::before{
-            //     background: -webkit-linear-gradient(#9356dc, #ff79da);
-            //     -webkit-background-clip: text;
-            //     -webkit-text-fill-color: transparent; 
-            // }
+            &::before{
+                background: -webkit-linear-gradient(#9356dc, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+            }
         }
         &--brand:hover{
             opacity: 0;
         }
         &--solid:hover{
             opacity: 1;
-            color: #9356dc;
         }
     }
 
