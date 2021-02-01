@@ -37,11 +37,11 @@
 /*--Operation--*/
 
 .operation{
-    padding: 3rem 1rem;
+    width: min-content;
+    margin: auto;
     background-color: #FFF;
     &__container{
         margin: 0 auto;
-        width: 23rem;
     }
     &__heading{
         @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);

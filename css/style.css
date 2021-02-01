@@ -274,12 +274,12 @@ h1 {
 
 /*--Operation--*/
 .operation {
-  padding: 3rem 1rem;
+  width: min-content;
+  margin: auto;
   background-color: #FFF;
 }
 .operation__container {
   margin: 0 auto;
-  width: 23rem;
 }
 .operation__heading {
   font-family: "Roboto", sans-serif;
