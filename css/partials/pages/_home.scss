@@ -38,8 +38,11 @@
 
 .operation{
     padding: 3rem 1rem;
-    margin: auto;
     background-color: #FFF;
+    &__container{
+        margin: 0 auto;
+        width: 23rem;
+    }
     &__heading{
         @include heading($font: 'Roboto', $size: 1.5rem, $font-weight: bold);
         background-color: #FFF;
@@ -49,6 +52,7 @@
         display: flex;
         justify-content: space-evenly;
         font-weight: bold;
+        width: 20rem;
         @include mini-cards($padding: 1.5rem 0);
         &:hover > &--icon{
             color: $colorPrimary;
@@ -81,9 +85,10 @@
     content: '3';
 }
 }
-@media screen and (min-width: 500px){
-    .operation{
-        width: 23rem;
+@media screen and (min-width: 1000px){
+    .operation__container{
+        display: flex;
+        justify-content: center;
     }
 }
 /*--Restaurants--*/
@@ -99,6 +104,7 @@
         margin: 1.25rem 1rem;
         border-radius: 1rem;
         box-shadow: 6px 6px 10px $colorShadow;
+        position: relative;
         &--link{
             text-decoration: none;
         }
@@ -150,41 +156,16 @@
     }
 
 }
-.new::before{
-    content: 'Nouveau';
+.new{
     background-color: #99e2d0;
     color: #058a69;
     font-weight: bold;
     font-size: 0.75rem;
     position: absolute;
+    top: 1rem;
+    right: 1rem;
     padding: 2px 0.75rem;
-    margin: 1rem 0 0 28rem;
     border-radius: 0.2rem;
-}
-@media screen and (max-width: 360px){
-    .new::before{
-        margin: 1rem 0 0 13rem;
-    }
-}
-@media screen and (min-width: 361px) and (max-width: 413px){
-    .new::before{
-        margin: 1rem 0 0 16rem;
-    }
-}
-@media screen and (min-width: 414px) and (max-width: 500px){
-    .new::before{
-        margin: 1rem 0 0 18rem;
-    }
-}
-@media screen and (min-width: 500px) and (max-width: 700px){
-    .new::before{
-        margin: 1rem 0 0 24rem;
-    }
-}
-@media screen and (min-width: 1000px){
-    .new::before{
-        margin: 1rem 0 0 22rem;
-    }
 }
 .loading{
     background-color: $colorBackground;
@@ -220,17 +201,17 @@
 }
 @keyframes translates{
     0%{
-        transform: translateX(0);
+        transform: translateY(0);
     }
     100%{
-        transform: translateX(-3840px);
+        transform: translateY(-1000px);
     }
 }
 @keyframes content{
     0%{
-        transform: translateX(-3840px);
+        transform: translateY(-1000px);
     }
     100%{
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
