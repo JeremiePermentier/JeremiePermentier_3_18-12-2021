@@ -83,7 +83,8 @@ h1 {
 
 .header__heading {
   padding: 1.25rem 0.5rem 1rem 0.5rem;
-  box-shadow: 0px 0px 10px 1px #1D1C1C30;
+  -webkit-box-shadow: 0px 0px 10px 1px #1D1C1C30;
+          box-shadow: 0px 0px 10px 1px #1D1C1C30;
   text-align: center;
 }
 
@@ -108,16 +109,22 @@ h1 {
 
 @media screen and (min-width: 1300px) {
   .restaurants {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3rem repeat(2, 1fr);
   }
   .restaurants__heading {
+    -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-row: 1;
     grid-row: 1;
   }
   .restaurants__card:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
     grid-row: 2;
   }
   .restaurants__card:nth-child(3) {
@@ -145,24 +152,37 @@ h1 {
 
 @media screen and (max-width: 1299px) and (min-width: 900px) {
   .restaurants {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3rem repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3rem repeat(2, 1fr);
   }
   .restaurants__card:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
+    -ms-grid-row: 2;
     grid-row: 2;
   }
   .restaurants__card:nth-child(3) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-column: 3/5;
+    -ms-grid-row: 2;
     grid-row: 2;
   }
   .restaurants__card:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
+    -ms-grid-row: 3;
     grid-row: 3;
   }
   .restaurants__card:nth-child(5) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-column: 3/5;
+    -ms-grid-row: 3;
     grid-row: 3;
   }
 }
@@ -175,66 +195,110 @@ h1 {
 
 @media screen and (min-width: 1450px) {
   .menu {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 3rem repeat(4, 5rem) 3rem;
+    -webkit-column-gap: 1rem;
     column-gap: 1rem;
   }
   .menu__container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
   .entrance:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     grid-row: 2/5;
   }
   .entrance:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     grid-row: 2/5;
   }
   .entrance:nth-child(4) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     grid-row: 2/5;
   }
   .entrance__btn {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
 }
 
 @media screen and (max-width: 1449px) and (min-width: 1110px) {
   .menu {
+    display: -ms-grid;
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 3rem repeat(4, 5rem) 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3rem repeat(4, 5rem) 3rem;
   }
   .menu__container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
   .entrance:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     grid-row: 2/5;
   }
   .entrance:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     grid-row: 2/5;
   }
   .entrance:nth-child(4) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     grid-row: 2/5;
   }
   .entrance__btn {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
 }
 
 .hero__position {
   background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
   color: #353535;
-  box-shadow: inset 0px 7px 4px -3px #1D1C1C30;
+  -webkit-box-shadow: inset 0px 7px 4px -3px #1D1C1C30;
+          box-shadow: inset 0px 7px 4px -3px #1D1C1C30;
 }
 
 .hero__position--text {
