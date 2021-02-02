@@ -163,11 +163,6 @@ h1 {
     grid-row: 3;
   }
 }
-@media screen and (max-width: 700px) {
-  .restaurants {
-    display: block;
-  }
-}
 @media screen and (min-width: 1450px) {
   .menu {
     display: grid;
